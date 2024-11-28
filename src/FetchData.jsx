@@ -4,29 +4,34 @@ import React, { useEffect, useState } from 'react'
 const userDetails = 'https://jsonplaceholder.typicode.com/posts';
 
 const FetchData = () => {
-    const [user, setUser] = useState(userDetails)
+
+    const [users, setUsers] = useState([userDetails])
 
     const userHandler = async () => {
         const response = await fetch(userDetails)
         const newData = await response.json()
-        setUser(newData)
+        setUsers(newData)
     }
 
     useEffect(() => {
         console.log(userHandler())
     }, [])
 
-    console.log(user)
+    console.log(users)
     return (
-        <div>
-            {user.map((items) => {
+        <>
+            {users.map((items) => {
                 return (
-                    <ul>
-                        <li>{items.userID}</li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li>{items.id}</li>
+                            <li>{items.title}</li>
+                            <li>{items.body}</li>
+                        </ul>
+                    </div>
                 )
             })}
-        </div>
+        </>
     )
 }
 

@@ -11,6 +11,7 @@ import EventListener from './EventListener';
 import FormChange from './FormChange';
 import MapMethod from './MapMethod';
 import FetchData from './FetchData';
+import PostMethod from './PostMethod';
 
 
 const user = {
@@ -33,7 +34,8 @@ function App() {
       {/* <EventListener/> */}
       {/* <FormChange/> */}
       {/* <MapMethod/> */}
-      <FetchData/>
+      {/* <FetchData/> */}
+      <PostMethod/>
     </div>
   );
 }
