@@ -32,10 +32,10 @@ function App() {
       {/* <StateManage /> */}
       {/* <ClickEvent /> */}
       {/* <EventListener/> */}
-      {/* <FormChange/> */}
+      <FormChange/>
       {/* <MapMethod/> */}
       {/* <FetchData/> */}
-      <PostMethod/>
+      {/* <PostMethod/> */}
     </div>
   );
 }
