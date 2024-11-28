@@ -11,9 +11,9 @@ const PostMethod = () => {
 
     const empDetails = { name, email, role, dept }
 
-    const empHandler = (e)=>{
+    const empHandler = (e) => {
         e.preventDefault()
-        console.log(empDetails) 
+        console.log(empDetails)
     }
 
     return (
