@@ -13,7 +13,7 @@ const PostMethod = () => {
 
     const empHandler = (e)=>{
         e.preventDefault()
-        console.log(empDetails)
+        console.log(empDetails) 
     }
 
     return (
